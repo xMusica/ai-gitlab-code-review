@@ -3,6 +3,7 @@ import { ChatModel } from 'openai/resources/index.mjs'
 declare module 'fastify' {
   interface FastifyInstance {
     env: {
+      OPENAI_BASE_URL: string
       OPENAI_API_KEY: string
       GITLAB_TOKEN: string
       GITLAB_URL: string
